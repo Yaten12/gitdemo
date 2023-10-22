@@ -11,7 +11,7 @@ options.add_experimental_option("detach", True)
 
 sev = Service()
 driver = webdriver.Chrome(options=options, service=sev)
-driver.implicitly_wait(5)
+driver.implicitly_wait(3)
 driver.maximize_window()
 driver.get('https://the-internet.herokuapp.com/windows')
 driver.find_element(By.LINK_TEXT, "Click Here").click()
